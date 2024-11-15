@@ -39,3 +39,11 @@ incrementButton.addEventListener("click", incrementCounter);
 decrementButton.addEventListener("click", decrementCounter);
 
 updateCounter();
+
+var backgroundButton = document.getElementById("backgroundButton");
+var backgroundColor = document.getElementById("backgroundColor");
+function changeBackgroundColor() {
+    var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
+
+}
