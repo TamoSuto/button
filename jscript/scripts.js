@@ -1,12 +1,14 @@
 var isOriginalColor = true;
 var text = document.getElementById('textBlock');
-var isOriginalVantage = true
+var isOriginalVantage = true;
 var backgroundButton = document.getElementById("backgroundButton");
 var backgroundColor = document.getElementById("backgroundColor");
 var counter = 0;
 var incrementButton = document.getElementById("incrementButton");
 var decrementButton = document.getElementById("decrementButton");
 var counterDisplay = document.getElementById("counter");
+var isHidden = true;
+var p = document.getElementById("paragraph")
 
 
 function changeColor() {
@@ -70,4 +72,14 @@ function changeTextColor() {
     isOriginalVantage = true;
     }
 
+    }
+    function hideFunction() {
+        if(isHidden) {
+            document.getElementById('paragraph').style.visibility="visible"
+            isHidden = false;
+        } else {
+            document.getElementById('paragraph').style.visibility="hidden"
+            isHidden = true;
+        }
+     
     }

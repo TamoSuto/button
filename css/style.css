@@ -21,4 +21,7 @@ img {
     width: 100px;
     
 }
-
+#paragraph {
+    visibility: hidden;
+    
+}
