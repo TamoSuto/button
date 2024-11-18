@@ -56,7 +56,7 @@ function changeBackgroundColor() {
 
 function changeTextColor() {
     if(isOriginalVantage) {
-        text.innerHTML ="i hate this"
+        text.innerHTML ="I Love This"
     
         document.getElementById('mainContent').style.background = backgroundColor="black";
         document.getElementById('mainContent').style.color = color="white";
