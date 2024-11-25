@@ -73,6 +73,7 @@ function changeTextColor() {
     }
 
     }
+    
     function hideFunction() {
         if(isHidden) {
             document.getElementById('paragraph').style.visibility="visible"
