@@ -8,8 +8,7 @@ var incrementButton = document.getElementById("incrementButton");
 var decrementButton = document.getElementById("decrementButton");
 var counterDisplay = document.getElementById("counter");
 var isHidden = true;
-var p = document.getElementById("paragraph")
-
+var p = document.getElementById("paragraph");
 
 function changeColor() {
     var button = document.getElementById("myButton");
@@ -70,17 +69,27 @@ function changeTextColor() {
         
     text.innerHTML ="Hobbyer"
     isOriginalVantage = true;
-    }
+        }
 
     }
     
-    function hideFunction() {
-        if(isHidden) {
-            document.getElementById('paragraph').style.visibility="visible"
-            isHidden = false;
-        } else {
-            document.getElementById('paragraph').style.visibility="hidden"
-            isHidden = true;
-        }
+function hideFunction() {
+    if(isHidden) {
+         document.getElementById('paragraph').style.visibility="visible"
+         isHidden = false;
+    } else {
+        document.getElementById('paragraph').style.visibility="hidden"
+        isHidden = true;
+     }
      
-    }
+}
+
+function getAge() {
+    let todayDate = new Date();
+    let year = todayDate.getFullYear();
+    let age = year - 2005;
+    let textfelt = document.getElementById('textArea');
+    textfelt.innerHTML = age;
+    return age;
+    
+}
